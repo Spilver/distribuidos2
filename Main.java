@@ -20,7 +20,7 @@ public class Main{
         System.out.println(InetAddress.getLocalHost().getHostAddress());
         System.out.println(InetAddress.getLocalHost().getHostName());
         try {
-            MyServerSocket server = new MyServerSocket("10.6.40.146",20000);
+            MyServerSocket server = new MyServerSocket(InetAddress.getLocalHost().getHostAddress(),20000);
             server.start();
             System.out.println("Entro a server");
             MyClientSocket cliente = new MyClientSocket("10.6.40.145",20000);
