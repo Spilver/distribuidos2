@@ -14,6 +14,10 @@ public class Main{
 
     static String json = "pacientes.json";
     public static void main(String[] args) throws Exception{
+
+
+        System.out.println(InetAddress.getLocalHost().getHostAddress());
+        System.out.println(InetAddress.getLocalHost().getHostName());
         try {
             MyServerSocket server = new MyServerSocket("10.6.40.146",20000);
             server.start();
