@@ -14,16 +14,18 @@ public class MyServerSocket extends Thread {
 
     }
     private void listen() throws Exception {
-        String data = null;
-        Socket client = this.server.accept();
-        String clientAddress = client.getInetAddress().getHostAddress();
-        System.out.println("\r\nNew connection from " + clientAddress);
-        
-        BufferedReader in = new BufferedReader(
-                new InputStreamReader(client.getInputStream()));        
-        while ( (data = in.readLine()) != null ) {
+        while(true){
+            String data = null;
+            Socket client = this.server.accept();
+            String clientAddress = client.getInetAddress().getHostAddress();
+            System.out.println("\r\nNew connection from " + clientAddress);
+            
+            BufferedReader in = new BufferedReader(
+            new InputStreamReader(client.getInputStream()));        
+            data = in.readLine();
             System.out.println("\r\nMessage from " + clientAddress + ": " + data);
         }
+        
     }
     public InetAddress getSocketAddress() {
         return this.server.getInetAddress();
