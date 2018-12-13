@@ -19,8 +19,10 @@ public class Main{
 
         System.out.println(InetAddress.getLocalHost().getHostAddress());
         System.out.println(InetAddress.getLocalHost().getHostName());
+
+        String direccion=InetAddress.getLocalHost().getHostAddress().toString();
         try {
-            MyServerSocket server = new MyServerSocket(InetAddress.getLocalHost().getHostAddress(),20000);
+            MyServerSocket server = new MyServerSocket(direccion,20000);
             server.start();
             System.out.println("Entro a server");
             MyClientSocket cliente = new MyClientSocket("10.6.40.145",20000);
