@@ -36,7 +36,7 @@ public class MyServerSocket extends Thread {
         try {
             
             System.out.println("\r\nRunning Server: " + 
-                    "Host=" + this.server.getInetAddress() + 
+                    "Host=" + this.server.getInetAddress().getHostAddress() + 
                     " Port=" + this.server.getLocalPort());
 
             listen();

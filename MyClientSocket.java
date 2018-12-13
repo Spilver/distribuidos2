@@ -23,9 +23,9 @@ public class MyClientSocket extends Thread {
     public void run() {
 
         try {
-            System.out.println("\r\nConnected to Server: " + socket.getInetAddress());
+            System.out.println("\r\nConnected to Server: " + socket.getInetAddress()+socket.getLocalPort());
             iniciar();  
-            }       
+            }          
 
 
         catch (Exception e) {
