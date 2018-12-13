@@ -26,7 +26,7 @@ public class Main{
             MyServerSocket server = new MyServerSocket(direccion,20000);
             server.start();
             System.out.println("Entro a server");
-            MyClientSocket cliente = new MyClientSocket("10.6.40.145",20000);
+            MyClientSocket cliente = new MyClientSocket("10.6.40.146",20000);
             cliente.start();
             System.out.println("Entro a cliente");
 
