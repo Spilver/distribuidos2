@@ -15,10 +15,10 @@ public class Main{
     static String json = "pacientes.json";
     public static void main(String[] args) throws Exception{
         try {
-            MyServerSocket server = new MyServerSocket("localhost",20000);
+            MyServerSocket server = new MyServerSocket("10.6.40.145",20000);
             server.start();
             System.out.println("Entro a server");
-            MyClientSocket cliente = new MyClientSocket("localhost",20000);
+            MyClientSocket cliente = new MyClientSocket("10.6.40.145",20000);
             cliente.start();
             System.out.println("Entro a cliente");
 
