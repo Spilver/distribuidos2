@@ -23,7 +23,7 @@ public class MyClientSocket extends Thread {
     public void run() {
 
         try {
-            System.out.println("\r\nConnected to Server: " + socket.getInetAddress()+socket.getLocalPort());
+            System.out.println("\r\nConnected to Server: " + socket.getInetAddress()+socket.getPort());
             iniciar();  
             }          
 
