@@ -7,7 +7,9 @@ public class MyServerSocket extends Thread {
     private ServerSocket server;
     public MyServerSocket(String ipAddress, int port) throws Exception {
           System.out.println("Entro a crear server");
-          this.server = new ServerSocket(port, 1, InetAddress.getByName(ipAddress));
+
+          this.server = new ServerSocket(port, 10, InetAddress.getByName(ipAddress));
+          System.out.println("en server es "+InetAddress.getByName(ipAddress));
           System.out.println("creo server");
 
     }

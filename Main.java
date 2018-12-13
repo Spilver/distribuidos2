@@ -21,6 +21,7 @@ public class Main{
         System.out.println(InetAddress.getLocalHost().getHostName());
 
         String direccion=InetAddress.getLocalHost().getHostAddress().toString();
+        System.out.println(direccion);
         try {
             MyServerSocket server = new MyServerSocket(direccion,20000);
             server.start();
