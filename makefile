@@ -3,7 +3,7 @@ all:
 	javac \
 		-sourcepath src \
 		-classpath lib/json-simple-1.1.1.jar:. \
-		Main.java MyServerSocket.java MyClientSocket.java Doctor.java Paramedico.java Enfermero.java\
+		Main.java MyServerSocket.java MyClientSocket.java Doctor.java Paramedico.java Enfermero.java Pair.java Requerimientos.java Pacientes.java\
 		-d classes
 
 test: all

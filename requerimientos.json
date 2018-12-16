@@ -4,13 +4,13 @@
 
     "cargo": "doctor",
 
-    "pacientes": [{"paciente_id": "recetar metformina"},
+    "pacientes": [{"1": "recetar metformina"},
 
-                  {"paciente_id": "recetar ibuprofeno"},
+                  {"2": "recetar ibuprofeno"},
 
-                  {"paciente_id": "pedir tomografia"},
+                  {"3": "pedir tomografia"},
 
-                  {"paciente_id":"colocar cateter"}
+                  {"4":"colocar cateter"}
 
                   ]},
 
@@ -18,7 +18,7 @@
 
     "cargo": "doctor",
 
-    "pacientes": [{"paciente_id": "recetar paracetamol"}
+    "pacientes": [{"2": "recetar paracetamol"}
 
                   ]}
 
